@@ -51,8 +51,6 @@
 										<li><a class="scroll" href="#about"><span>about</span></a></li>
 										<li><a class="scroll" href="#services"><span>services</span></a></li>
 										<li><a class="scroll" href="#portfolio"><span>portfolio</span></a></li>
-										<li><a class="scroll" href="#testimonial"><span>Testimonial</span></a></li>
-										<li><a class="scroll" href="#blog"><span>blog</span></a></li>
 										<li><a class="scroll" href="#contact"><span>Contact</span></a></li>
 										<div class="clearfix"> </div>
 									</ul>
@@ -110,16 +108,7 @@
 	<div class="container">
 		<h3>ABOUT ME</h3>
 		<div class="strip text-center"><img src="images/about.png" alt=" "/></div>
-		<p>Dyin' ain't much of a livin', boy. here. put that in your report!" and "i may have found 
-		a way out of here. you want a guarantee, buy a toaster. here. put that in your report!" and 
-		"i may have found a way out of here. this is the ak-47 assault rifle, the preferred weapon of 
-		your enemy; and it makes a distinctive sound when fired at you, so remember it. this is the ak-47 
-		assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at 
-		you, so remember it. don't p!ss down my back and tell me it's raining. this is the ak-47 assault 
-		rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, 
-		so remember it. don't p!ss down my back and tell me it's raining. this is my gun, clyde! man's 
-		gotta know his limitations. ever notice how sometimes you come across somebody you shouldn't have 
-		f**ked with? well, i'm that guy.</p>
+		<p>对自己狠一点</p>
 		<ul>
 			<li><a class="fb" href="#"></a></li>
 			<li><a class="twit" href="#"></a></li>
@@ -140,27 +129,27 @@
 		<div class="skill-grids">
 					<div class="col-md-2 skills-grid text-center">
 						<div class="circle" id="circles-1"></div>
-						<p>Photoshop</p>
+						<p>Java</p>
 					</div>
 					<div class="col-md-2 skills-grid text-center">
 						<div class="circle" id="circles-2"></div>
-						<p>Illustrator</p>
+						<p>C/C++</p>
 					</div>
 					<div class="col-md-2 skills-grid text-center">
 						<div class="circle" id="circles-3"></div>
-						<p>Photography</p>
+						<p>Python</p>
 					</div>
 					<div class="col-md-2 skills-grid text-center">
 						<div class="circle" id="circles-4"></div>
-						<p>Html 5 / CSS 3</p>
+						<p>Html/js/css</p>
 					</div>
 					<div class="col-md-2 skills-grid text-center">
 						<div class="circle" id="circles-5"></div>
-						<p>C4D</p>
+						<p>Linux</p>
 					</div>
 					<div class="col-md-2 skills-grid text-center">
 						<div class="circle" id="circles-6"></div>
-						<p>After Effect</p>
+						<p>Docker</p>
 					</div>
 					<div class="clearfix"> </div>
 				 <script type="text/javascript" src="js/circles.js"></script>
@@ -169,8 +158,18 @@
 										['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff']
 									];
 								for (var i = 1; i <= 7; i++) {
+									var d = 70;
+									if(i==1||i==5||i==6){
+										d=100;
+									}
+									if(i==3){
+										d=80;
+									}
+									if(i==6){
+										d=90;
+									}
 									var child = document.getElementById('circles-' + i),
-										percentage = 30 + (i * 10);
+										percentage = d;
 										
 									Circles.create({
 										id:         child.id,
@@ -189,62 +188,7 @@
 </div>
 <!--//my skill-->
 <div class="my-skill-back"></div>
-<!--education-->
-<div class="education text-center">
-	<div class="container">
-		<div class="edu-info">
-			<h3>EDUCATION</h3>
-		</div>
-		<div class="strip text-center"><img src="images/edu.png" alt=" "/></div>
-		<div class="edu-grids">
-			<div class="col-md-4 edu-grid">
-				<p>2012 - 2013</p><span>Graduated</span>
-				<img src="images/arrow.png" alt=""/>
-				<div class="edu-border">
-					<div class="edu-grid-master">
-						<h3>MASTER DEGREE OF COMPUTER SCIENCE</h3>
-						<h4>Oxford University</h4>
-					</div>
-					<div class="edu-grid-info">
-						<h5>This is Photoshop's version Lorem Ipsum. 
-						Well, the way they make shows is, they make one show.</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 edu-grid">
-				<p>2012 - 2013</p><span>Graduated</span>
-				<img src="images/arrow.png" alt=""/>
-				<div class="edu-border">
-					<div class="edu-grid-master">
-						<h3>MASTER DEGREE OF COMPUTER SCIENCE</h3>
-						<h4>Oxford University</h4>
-					</div>
-					<div class="edu-grid-info">
-						<h5>This is Photoshop's version Lorem Ipsum. 
-						Well, the way they make shows is, they make one show.</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 edu-grid">
-				<p>2012 - 2013</p><span>Graduated</span>
-				<img src="images/arrow.png" alt=""/>
-				<div class="edu-border">
-					<div class="edu-grid-master">
-						<h3>MASTER DEGREE OF COMPUTER SCIENCE</h3>
-						<h4>Oxford University</h4>
-					</div>
-					<div class="edu-grid-info">
-						<h5>This is Photoshop's version Lorem Ipsum. 
-						Well, the way they make shows is, they make one show.</h5>
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-	
-</div>
-<!--//education-->
+
 <div class="strip-border"><p></p></div>
 <!--work-->
 <div class="work-experience text-center">
@@ -257,40 +201,31 @@
 		<div class="work-grids">
 			<div class="col-md-4 w-grid">
 				<div class="work-grid">
-					<h3>2013 - Now</h3>
+					<h3>2013 - 2016</h3>
 					<div class="work-grid-info">
-						<h4>Google</h4>
-						<h5>Visual Designer</h5>
-						<p>Now that there is the Tec-9, a crappy spray gun from South Miami. 
-						This gun is advertised as the most popular gun in American crime. 
-						Do you believe that shit? It actually says that in the little book 
-						that comes with it: the most popular gun in</p>
+						<h4>深圳天源迪科</h4>
+						<h5>后端工程师</h5>
+						<p>于2013年毕业后就职在天源迪科，先后参与开发了联通四省月租，联通虚拟运营商计费平台，联通号卡集中项目。</p>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4 w-grid">
 				<div class="work-grid">
-					<h3>2013 - Now</h3>
+					<h3>2016 - 2017</h3>
 					<div class="work-grid-info">
-						<h4>Google</h4>
-						<h5>Visual Designer</h5>
-						<p>Now that there is the Tec-9, a crappy spray gun from South Miami. 
-						This gun is advertised as the most popular gun in American crime. 
-						Do you believe that shit? It actually says that in the little book 
-						that comes with it: the most popular gun in</p>
+						<h4>菲亚诺克</h4>
+						<h5>后端工程师</h5>
+						<p>于2016年参与菲亚诺克(天津)公司，担任后端工程师职位，先后负责开发维护了公司官网项目，钉钉微应用-海格丽特销售系统等。</p>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4 w-grid">
 				<div class="work-grid">
-					<h3>2013 - Now</h3>
+					<h3>2017 - Now</h3>
 					<div class="work-grid-info">
-						<h4>Google</h4>
-						<h5>Visual Designer</h5>
-						<p>Now that there is the Tec-9, a crappy spray gun from South Miami. 
-						This gun is advertised as the most popular gun in American crime. 
-						Do you believe that shit? It actually says that in the little book 
-						that comes with it: the most popular gun in</p>
+						<h4>易智付</h4>
+						<h5>后端工程师</h5>
+						<p>于2017年加入到易智付至今。接手公司开放平台项目，目前参与官网平台改造。</p>
 					</div>
 				</div>
 			</div>
@@ -311,31 +246,23 @@
 		<div class="ser-grids">
 			<div class="col-md-3 ser-grid">
 				<div class="ser-imagea"></div>
-				<h3>Web Design</h3>
-				<p>I'm gonna shoot you in the head
-				then and there. Then I'm gonna shoot 
-				that bitch in the kneecaps.</p>
+				<h3>后端开发</h3>
+				<p>Java后端开发.</p>
 			</div>
 			<div class="col-md-3 ser-grid">
 				<div class="ser-imageb"></div>
-				<h3>Graphic Design</h3>
-				<p>I'm gonna shoot you in the head
-				then and there. Then I'm gonna shoot 
-				that bitch in the kneecaps.</p>
+				<h3>数据库开发</h3>
+				<p>Mysql，Oracle，Redis等数据库</p>
 			</div>
 			<div class="col-md-3 ser-grid">
 				<div class="ser-imagec"></div>
-				<h3>Content Writer</h3>
-				<p>I'm gonna shoot you in the head
-				then and there. Then I'm gonna shoot 
-				that bitch in the kneecaps.</p>
+				<h3>脚本开发</h3>
+				<p>Python，shell脚本的开发能力.</p>
 			</div>
 			<div class="col-md-3 ser-grid">
 				<div class="ser-imaged"></div>
-				<h3>Development</h3>
-				<p>I'm gonna shoot you in the head
-				then and there. Then I'm gonna shoot 
-				that bitch in the kneecaps.</p>
+				<h3>微信小程序开发</h3>
+				<p>微信小程序开发能力，github上有上传的源码.</p>
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -347,59 +274,54 @@
 	<div class="container">
 		<h3>PORTFOLIO</h3>
 		<div class="strip text-center"><img src="images/port.png" alt=" "/></div>
-		<p>You think water moves fast? You should see ice. It moves like it has a mind. 
-		Like it knows it killed the world once and got a taste for murder. After the avalanche, 
-		it took us a week to climb out. Now, I don't know exactly when we turned on each other, 
-		but I know that seven of us survived the slide and only five made it out. Now we took an 
-		oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, 
-		but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
+		<p>发现.欣赏</p>
 		<div class="gallery-grids">
 			<div class="top-gallery">
 				<div class="col-md-4 gallery-grid gallery1">
 					<a href="images/p1.jpg" class="swipebox"><img src="images/p1.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-							<h4>Project Name</h4>
-							<p>WEB DESIGN</p>
+							<h4>BY</h4>
+							<p>sun nannan</p>
 							<div class="button"><a href="images/p1.jpg" class="swipebox">VIEW</a></div>
 						</div>
 				</div></a>
 				<div class="col-md-4 gallery-grid gallery1">
 					<a href="images/p2.jpg" class="swipebox"><img src="images/p2.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-							<h4>Project Name</h4>
-							<p>WEB DESIGN</p>
+							<h4>BY</h4>
+							<p>sun nannan</p>
 							<div class="button"><a href="images/p2.jpg" class="swipebox">VIEW</a></div>
 						</div>
 				</div></a>
 				<div class="col-md-4 gallery-grid gallery1">
 					<a href="images/p3.jpg" class="swipebox"><img src="images/p3.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-							<h4>Project Name</h4>
-							<p>WEB DESIGN</p>
+							<h4>BY</h4>
+							<p>sun nannan</p>
 							<div class="button"><a href="images/p3.jpg" class="swipebox">VIEW</a></div>
 						</div>
 				</div></a>
 				<div class="col-md-4 gallery-grid gallery1">
 					<a href="images/p4.jpg" class="swipebox"><img src="images/p4.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-							<h4>Project Name</h4>
-							<p>WEB DESIGN</p>
+							<h4>BY</h4>
+							<p>sun nannan</p>
 							<div class="button"><a href="images/p4.jpg" class="swipebox">VIEW</a></div>
 						</div>
 				</div></a>
 				<div class="col-md-4 gallery-grid gallery1">
 					<a href="images/p5.jpg" class="swipebox"><img src="images/p5.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-							<h4>Project Name</h4>
-							<p>WEB DESIGN</p>
+							<h4>BY</h4>
+							<p>sun nannan</p>
 							<div class="button"><a href="images/p5.jpg" class="swipebox">VIEW</a></div>
 						</div>
 				</div></a>
 				<div class="col-md-4 gallery-grid gallery1">
 					<a href="images/p6.jpg" class="swipebox"><img src="images/p6.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-							<h4>Project Name</h4>
-							<p>WEB DESIGN</p>
+							<h4>BY</h4>
+							<p>sun nannan</p>
 							<div class="button"><a href="images/p6.jpg" class="swipebox">VIEW</a></div>
 						</div>
 				</div></a>
@@ -416,292 +338,7 @@
 	</div>
 </div>
 <!--//portfolio-->
-<!--process-->
-<div class="process text-center">
-	<div class="container">
-		<h3>PROCESS</h3>
-		<div class="strip text-center"><img src="images/pro.png" alt=" "/></div>
-		<div class="process-girds">
-			<div class="col-md-2 process-pad">
-				<div class="process-gird">
-					<div class="process-imagea"></div>
-					<p>IDEA</p>
-					<img src="images/6.png" alt=""/>
-				</div>
-			</div>
-			<div class="col-md-2 process-pad">
-				<div class="process-gird">
-					<div class="process-imageb"></div>
-					<p>CONCEPT</p>
-					<img class="pro-imga" src="images/6.png" alt=""/>
-				</div>
-			</div>
-			<div class="col-md-2 process-pad">
-				<div class="process-gird">
-					<div class="process-imagec"></div>
-					<p>DESIGN</p>
-					<img class="pro-img" src="images/6.png" alt=""/>
-				</div>
-			</div>
-			<div class="col-md-2 process-pad">
-				<div class="process-gird">
-					<div class="process-imaged"></div>
-					<p>DEVELOP</p>
-					<img class="pro-imgb" src="images/6.png" alt=""/>
-				</div>
-			</div>
-			<div class="col-md-2 process-pad">
-				<div class="process-gird">
-					<div class="process-imagee"></div>
-					<p>TEST</p>
-					<img src="images/6.png" alt=""/>
-				</div>
-			</div>
-			<div class="col-md-2 process-pad">
-				<div class="process-gird">
-					<div class="process-imagef"></div>
-					<p>LAUNCH</p>
-					
-				</div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-</div>
-<!--//process-->
-<div class="process-back"></div>
-<!--testimonials-->
-<div class="testimonials" id="testimonial">
-	<div class="container">
-		<h3>TESTIMONIAL</h3>
-		<div class="strip text-center"><img src="images/test.png" alt=" "/></div>
-			<!-- responsiveslides -->
-					<script src="js/responsiveslides.min.js"></script>
-						<script>
-							// You can also use "$(window).load(function() {"
-							$(function () {
-							 // Slideshow 4
-							$("#slider3").responsiveSlides({
-								auto: true,
-								pager: false,
-								nav: true,
-								speed: 500,
-								namespace: "callbacks",
-								before: function () {
-							$('.events').append("<li>before event fired.</li>");
-							},
-							after: function () {
-								$('.events').append("<li>after event fired.</li>");
-								}
-								});
-								});
-						</script>
-			<!-- responsiveslides -->
-			<div  id="top" class="callbacks_container">
-					<ul class="rslides" id="slider3">
-						<li>
-							<div class="test-banner">
-								<img class="quoa" src="images/quo2.png" alt=""/>
-								<div class="test-left">
-									<img src="images/7.png" alt=""/>
-								</div>
-								<div class="test-right">
-									<p>However unreal it may seem, we are connected, 
-									you and I. We're on the same curve, just on opposite ends.</p>
-									<h4>Sam L. J. - Pulp Fiction</h4>
-								</div>
-								<div class="clearfix"></div>
-								<img class="quo" src="images/quo1.png" alt=""/>
-							</div>
-						</li>
-						<li>
-							<div class="test-banner">
-								<img class="quoa" src="images/quo2.png" alt=""/>
-								<div class="test-left">
-									<img src="images/eee.png" alt=""/>
-								</div>
-								<div class="test-right">
-									<p>However unreal it may seem, we are connected, 
-									you and I. We're on the same curve, just on opposite ends.</p>
-									<h4>Sam L. J. - Pulp Fiction</h4>
-								</div>
-								<div class="clearfix"></div>
-								<img class="quo" src="images/quo1.png" alt=""/>
-							</div>
-						</li>
-					</ul>
-			</div>
-			
-	</div>
-</div>
-<!--testimonials-->
-<!--clients-->
-<div class="clients text-center">
-	<div class="container">
-		<h4>Clients</h4>
-		<div class="strip-line"></div>
-		<div class="client-grids">
-			<div class="col-md-4 cl-grid">
-				<div class="client-grid">
-					<img src="images/10.png" alt=""/>
-				</div>
-			</div>
-			<div class="col-md-4 cl-grid">
-				<div class="client-grid">
-					<img src="images/11.png" alt=""/>
-				</div>
-			</div>
-			<div class="col-md-4 cl-grid">
-				<div class="client-grid">
-					<img src="images/12.png" alt=""/>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-</div>
-<!--clients-->
-<div class="client-back"></div>
-<!--blog-->
-<div class="blog" id="blog">
-	<div class="container">
-		<div class="blog-info text-center">
-			<h3>BLOG</h3>
-			<div class="strip text-center"><img src="images/blog.png" alt=" "/></div>
-		</div>
-		<div class="blog-grids">
-			<div class="col-md-4 blog-text-info">
-				<div class="blog-grid">
-					<a href="single.html"><img src="images/a.jpg" alt=""/></a>
-					<div class="blog-text">
-						<a href="single.html">Nature is lethal but it doesn't hold a candle to man.</a>
-						<div class="stripa"></div>
-						<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria 
-						and viruses differently than mine. You don't get sick, I do.</p>
-					</div>
-				
-					<div class="blog-para">
-							<ul>
-								<li><a href="#">3 Comments</a></li>
-								<li><a href="#">8 Share</a></li>
-							</ul>
-					</div>	
-					<div class="blog-pos">
-						<p>5<span>May</span></p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 blog-text-info">
-				<div class="blog-grid">
-					<a href="single.html"><img src="images/b.jpg" alt=""/></a>
-					<div class="blog-text">
-						<a href="single.html">Nature is lethal but it doesn't hold a candle to man.</a>
-						<div class="stripa"></div>
-						<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria 
-						and viruses differently than mine. You don't get sick, I do.</p>
-					</div>
-				
-					<div class="blog-para">
-							<ul>
-								<li><a href="#">3 Comments</a></li>
-								<li><a href="#">8 Share</a></li>
-							</ul>
-					</div>
-					<div class="blog-pos">
-						<p>5<span>May</span></p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 blog-text-info">
-				<div class="blog-grid">
-					<a href="single.html"><img src="images/c.jpg" alt=""/></a>
-					<div class="blog-text">
-						<a href="single.html">Nature is lethal but it doesn't hold a candle to man.</a>
-						<div class="stripa"></div>
-						<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria 
-						and viruses differently than mine. You don't get sick, I do.</p>
-					</div>
-				
-					<div class="blog-para">
-							<ul>
-								<li><a href="#">3 Comments</a></li>
-								<li><a href="#">8 Share</a></li>
-							</ul>
-					</div>
-					<div class="blog-pos">
-						<p>5<span>May</span></p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 blog-text-info">
-				<div class="blog-grid">
-					<a href="single.html"><img src="images/a.jpg" alt=""/></a>
-					<div class="blog-text">
-						<a href="single.html">Nature is lethal but it doesn't hold a candle to man.</a>
-						<div class="stripa"></div>
-						<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria 
-						and viruses differently than mine. You don't get sick, I do.</p>
-					</div>
-				
-					<div class="blog-para">
-							<ul>
-								<li><a href="#">3 Comments</a></li>
-								<li><a href="#">8 Share</a></li>
-							</ul>
-					</div>
-					<div class="blog-pos">
-						<p>5<span>May</span></p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 blog-text-info">
-				<div class="blog-grid">
-					<a href="single.html"><img src="images/b.jpg" alt=""/></a>
-					<div class="blog-text">
-						<a href="single.html">Nature is lethal but it doesn't hold a candle to man.</a>
-						<div class="stripa"></div>
-						<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria 
-						and viruses differently than mine. You don't get sick, I do.</p>
-					</div>
-				
-					<div class="blog-para">
-							<ul>
-								<li><a href="#">3 Comments</a></li>
-								<li><a href="#">8 Share</a></li>
-							</ul>
-					</div>
-					<div class="blog-pos">
-						<p>5<span>May</span></p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 blog-text-info">
-				<div class="blog-grid">
-					<a href="single.html"><img src="images/c.jpg" alt=""/></a>
-					<div class="blog-text">
-						<a href="single.html">Nature is lethal but it doesn't hold a candle to man.</a>
-						<div class="stripa"></div>
-						<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria 
-						and viruses differently than mine. You don't get sick, I do.</p>
-					</div>
-				
-					<div class="blog-para">
-							<ul>
-								<li><a href="#">3 Comments</a></li>
-								<li><a href="#">8 Share</a></li>
-							</ul>
-					</div>
-					<div class="blog-pos">
-						<p>5<span>May</span></p>
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-</div>
-<!--//blog-->
-<div class="contact-back"></div>
+
 <!--contact-->
 <div class="contact" id="contact">
 	<div class="container">
@@ -714,12 +351,12 @@
 				<h3>Say Hi to Me</h3>
 				<div class="stripb"></div>
 				<ul>
-					<li>Orchard Park, Long Bennington, </li>
-					<li>Newark, Lincolnshire </li>
-					<li>NG23 5DQ, United Kingdom</li>
-					<li>9876543210</li>
-					<li><a href="mailto:info@example.com">Sebastian@mail.com</a></li>
-					<li><a href="#">www.sebasti.an</a></li>
+					<li>天津市, </li>
+					<li>滨海新区 </li>
+					<li>某个旮沓里</li>
+					<li>150-2245-8018</li>
+					<li><a href="mailto:info@example.com">qnlh_nan@sina.com</a></li>
+					<!--<li><a href="#">www.sebasti.an</a></li>-->
 				</ul>
 			</div>
 			<div class="col-md-7 contact-right">
